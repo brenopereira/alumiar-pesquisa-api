@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support\Http\Routing;
+namespace Alumiar\Support\Http\Routing;
 
 /**
  * Class RouteFile

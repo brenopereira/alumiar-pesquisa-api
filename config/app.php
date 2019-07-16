@@ -166,15 +166,8 @@ return [
          * Package Service Providers...
          */
 
-        /*
-         * Application Service Providers...
-         */
-        Alumiar\Providers\AppServiceProvider::class,
-        Alumiar\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        Alumiar\Providers\EventServiceProvider::class,
-        Alumiar\Providers\RouteServiceProvider::class,
-
+        \Alumiar\Units\Core\Providers\UnitServiceProvider::class,
+        \Alumiar\Units\Auth\Providers\UnitServiceProvider::class
     ],
 
     /*
