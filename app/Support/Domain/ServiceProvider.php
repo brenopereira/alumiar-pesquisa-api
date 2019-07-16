@@ -46,11 +46,18 @@ abstract class ServiceProvider extends LaravelProvider
     protected $factories = [];
 
     /**
+     * @var bool
+     */
+    protected $hasTranslations = false;
+
+    /**
      *
      */
     public function boot()
     {
-
+        if($this->hasTranslations){
+            $this->registerTranslations();
+        }
     }
 
     /**
